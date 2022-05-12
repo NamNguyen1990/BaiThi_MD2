@@ -52,6 +52,19 @@ public class QuanLyDanhBa {
         }
     }
 
+    public  void timSDTGanDung (String sDT) {
+        boolean check = false;
+        for (int i = 0; i < danhBaList.size(); i++) {
+            if (danhBaList.get(i).getsDT().contains(sDT)) {
+                System.out.println(danhBaList.get(i));
+                check = true;
+            }
+        }
+        if (check == false) {
+            System.out.println(ANSI_RED + "Không có số điện thoại nào như trên!" + ANSI_RESET);
+        }
+    }
+
 
 
 

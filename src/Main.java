@@ -27,7 +27,6 @@ public class Main {
         System.out.println("8 - Xem lại Chương trình");
         System.out.println("9 - Thoát");
 
-
         do {
             System.out.println("Mời bạn chọn chức năng");
             System.out.println(ANSI_RED + "Note: Nhấn 8 Xem lại Chương trình" + ANSI_RESET);
@@ -121,7 +120,9 @@ public class Main {
                 }
             }
             else if (luaChon == 5) {
-
+                System.out.println("Nhập số điện thoại cần tìm!");
+                String soDT = nhapChu.nextLine();
+                quanLyDanhBa.timSDTGanDung(soDT);
             }
             else if (luaChon == 6) {
 
