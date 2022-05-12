@@ -133,7 +133,7 @@ public class Main {
             else if (luaChon == 8) {
 
                 System.out.println("===Chương trình quản lý danh bạ===");
-                System.out.println("Chọn chức năng theo số (để iếp tục):");
+                System.out.println("Chọn chức năng theo số (để tiếp tục):");
                 System.out.println("1 - Xem danh sách");
                 System.out.println("2 - Thêm mới");
                 System.out.println("3 - Cập nhật");
@@ -153,10 +153,6 @@ public class Main {
 
 
 
-
-
-    public static final String ANSI_CYAN = "\u001B[36m";
-    public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
 }
