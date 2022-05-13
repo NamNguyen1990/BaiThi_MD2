@@ -6,7 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuanLyDanhBa {
-    List<DanhBa> danhBaList = new ArrayList<>();
+    public static List<DanhBa> danhBaList = new ArrayList<>();
+
+    public QuanLyDanhBa() {
+    }
+
+    public static List<DanhBa> getDanhBaList() {
+        return danhBaList;
+    }
+
+    public static void setDanhBaList(List<DanhBa> danhBaList) {
+        QuanLyDanhBa.danhBaList = danhBaList;
+    }
 
     public void them(DanhBa danhBa) {
         danhBaList.add(danhBa);

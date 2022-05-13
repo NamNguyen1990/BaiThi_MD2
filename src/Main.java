@@ -1,12 +1,14 @@
+import file.GhiDocFile;
 import manage.QuanLyDanhBa;
 import model.DanhBa;
 import input.CkeckRegex;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         QuanLyDanhBa quanLyDanhBa = new QuanLyDanhBa();
         CkeckRegex ckeckRegex = new CkeckRegex();
         Scanner sc = new Scanner(System.in);
@@ -125,10 +127,10 @@ public class Main {
                 quanLyDanhBa.timSDTGanDung(soDT);
             }
             else if (luaChon == 6) {
-
+                GhiDocFile.docTuFile("KtraMD2.csv",QuanLyDanhBa.getDanhBaList());
             }
             else if (luaChon == 7) {
-
+                GhiDocFile.ghiVaoFile("KtraMD2.csv",QuanLyDanhBa.getDanhBaList());
             }
             else if (luaChon == 8) {
 
@@ -149,9 +151,6 @@ public class Main {
         } while (luaChon != 9);
 
     }
-
-
-
 
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
